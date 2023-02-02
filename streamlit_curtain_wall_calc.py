@@ -3,12 +3,12 @@ import numpy as np
 import pandas as pd
 #import plotly.graph_objects as go
 import pickle
-import math
+#import math
 import matplotlib.pyplot as plt
-import os
+#import os
 #import pdfkit
 from streamlit_drawable_canvas import st_canvas
-from PIL import Image
+#from PIL import Image
 import json
 
 # st.markdown("""
@@ -98,9 +98,9 @@ def make_json(w,h,x,y,s,app):
         }
     return(json_data)
 
-fileDir = 'C:\Python\Deploy'
+#fileDir = 'C:\Python\Deploy'
 pFile = 'Product_DF_v2.sav'
-dfP = pd.read_pickle(os.path.join(fileDir,pFile))
+dfP = pd.read_pickle(pFile)
 
 st.set_page_config(layout="wide")
 
